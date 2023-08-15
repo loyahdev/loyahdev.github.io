@@ -1,0 +1,59 @@
+/*
+#FD8A8A
+#F1F7B5
+#A8D1D1
+#9EA1D4
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Noto Sans Mono, sans-serif;
+}
+
+.input-container {
+  display: flex;
+}
+
+.blue {
+  color: #a8d1d1;
+}
+
+.yellow {
+  color: #f1f7b5 !important;
+}
+
+.purple {
+  color: #9ea1d4 !important;
+}
+
+.red {
+  color: #fd8a8a !important;
+}
+
+.input {
+  background-color: black;
+  border-style: none;
+  color: white;
+  font-family: Noto Sans Mono, sans-serif;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline-style: none;
+}
+
+.commands {
+  list-style: none;
+}
+
+#mountain-art {
+  width: 30ch;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
