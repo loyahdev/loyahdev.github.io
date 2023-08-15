@@ -11,33 +11,42 @@
   <body>
     <div id="container">
       <h1>loyahdev</h1>
-      <div class="ascii-art">
-        <pre>
-  __       ______   __  __   ________   ___   ___   ______   ______   __   __     
+      <div class="ascii-container">
+        <code>
+ __       ______   __  __   ________   ___   ___   ______   ______   __   __     
  /_/\     /_____/\ /_/\/_/\ /_______/\ /__/\ /__/\ /_____/\ /_____/\ /_/\ /_/\
- \:\ \    \:::_ \ \\ \ \ \ \\::: _  \ \\::\ \\  \ \\:::_ \ \\::::_\/_\:\ \\ \ \
-  \:\ \    \:\ \ \ \\:\_\ \ \\::(_)  \ \\::\/_\ .\ \\:\ \ \ \\:\/___/\\:\ \\ \ \
-   \:\ \____\:\ \ \ \\::::_\/ \:: __  \ \\:: ___::\ \\:\ \ \ \\::___\/_\:\_/.:\ \
-    \:\/___/\\:\_\ \ \ \::\ \  \:.\ \  \ \\: \ \\::\ \\:\/.:| |\:\____/\\ ..::/ /
-     \_____\/ \_____\/  \__\/   \__\/\__\/ \__\/ \::\/ \____/_/ \_____\/ \___/_/
-                                                                                           
-        </pre>
-        <style>
-          .ascii-art {
-            font-size: 1rem; /* Adjust to suit your needs */
-            line-height: 1.2; /* Adjust to suit your needs */
-            white-space: pre-wrap; /* Wraps the text to next line */
-            word-wrap: break-word; /* Breaks the word */
-            overflow-wrap: break-word; /* Breaks the word */
-            max-width: 100%; /* Ensures that the container fits the screen */
-          }
+\:\ \    \:::_ \ \\ \ \ \ \\::: _  \ \\::\ \\  \ \\:::_ \ \\::::_\/_\:\ \\ \ \
+ \:\ \    \:\ \ \ \\:\_\ \ \\::(_)  \ \\::\/_\ .\ \\:\ \ \ \\:\/___/\\:\ \\ \ \
+  \:\ \____\:\ \ \ \\::::_\/ \:: __  \ \\:: ___::\ \\:\ \ \ \\::___\/_\:\_/.:\ \
+   \:\/___/\\:\_\ \ \ \::\ \  \:.\ \  \ \\: \ \\::\ \\:\/.:| |\:\____/\\ ..::/ /
+    \_____\/ \_____\/  \__\/   \__\/\__\/ \__\/ \::\/ \____/_/ \_____\/ \___/_/
+        </code>
+      </div>
+      
+      <style>
+        /*.ascii-container {
+          /*text-align: center; /* Centers the text */
+          /*margin: 0 auto; /* Centers the container */
+        /*}*/
         
-          @media (max-width: 768px) {
-            .ascii-art {
-              font-size: 0.8rem; /* Adjust to suit mobile devices */
-            }
+        .ascii-container code {
+          display: inline-block; /* Allows text-align to work */
+          font-family: monospace; /* Ensures a fixed-width font */
+          white-space: pre; /* Preserves whitespace */
+          overflow-wrap: break-word; /* Breaks the words */
+          word-wrap: break-word; /* Breaks the words */
+          overflow: hidden; /* Hides the overflow */
+          max-width: 100%; /* Ensures that the container fits the screen */
+          font-size: 0.9rem; /* You may need to adjust this to scale the ASCII art */
+        }
+      
+        @media (max-width: 768px) {
+          .ascii-container code {
+            font-size: 0.7rem; /* Adjust to suit mobile devices */
           }
-        </style>
+        }
+      </style>
+      
       </div>
       <p>
         Hi, I'm Jaxon a Game Developer and programmer based out of Canada and makes games for Unity and Roblox.
