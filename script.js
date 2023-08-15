@@ -5,11 +5,11 @@ const inputHistory = [];
 
 commands = {
   about: "This is the about bit. I am about Iori Pearce",
-  hobbies: "This is the hobbies bit",
   interests: "This is the interests bit",
-  contact: "This is the contact bit",
+  contact: "You can contact me at multiple place below: \n github",
   history: "_",
   help: "_",
+  clear: "_"
 };
 
 document.addEventListener("keyup", () => {
@@ -51,11 +51,11 @@ function enterWithInput(command) {
     const listOfCommands = `<div id="command-list">
         <ul>
           <li class="commands"><span class="purple">'about'</span> - find out information about myself</li>
-          <li class="commands"><span class="purple">'hobbies'</span> - discover what I like to do in my spare time</li>
           <li class="commands"><span class="purple">'interests'</span> - uncover what excites me in the world of computer science</li>
           <li class="commands"><span class="purple">'contact'</span> - locate different ways of contacting me</li>
           <li class="commands"><span class="purple">'history'</span> - view your terminal search history</li>
           <li class="commands"><span class="yellow">'help'</span> - type to view this list of commands</li>
+          <li class="commands"><span class="red">'clear'</span> - type this to clear the terminal</li>
         </ul>
       </div>`;
     container.innerHTML += listOfCommands;
@@ -66,6 +66,42 @@ function enterWithInput(command) {
     });
     text += "</ul> </div>";
     container.innerHTML += text;
+  } else if (command === "clear") {
+    location.reload();
+  }else if (command === "contact") {
+    const newEl0 = document.createElement("p");
+    newEl0.textContent = `You can contact me on Discord or Github:`
+    container.appendChild(newEl0);
+      
+    const newEl1 = document.createElement("img");
+    newEl1.alt = "github";
+    newEl1.height = "56";
+    newEl1.src = "https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/github_64h.png";    
+    const anchor1 = document.createElement("a");
+    anchor1.href = "https://github.com"; // Replace with the desired link
+    anchor1.target = "_blank"; // This line will open the link in a new tab
+    anchor1.appendChild(newEl1);
+    container.appendChild(anchor1); // Append to the container instead of the body
+
+    //placeholder
+    const placeHodler = document.createElement("p");
+    placeHodler.textContent = ``
+    container.appendChild(placeHodler);
+
+    const newEl2 = document.createElement("img");
+    newEl2.alt = "discord";
+    newEl2.height = "56";
+    newEl2.src = "https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-plural_64h.png";    
+    const anchor2 = document.createElement("a");
+    anchor2.href = "https://github.com"; // Replace with the desired link
+    anchor2.target = "_blank"; // This line will open the link in a new tab
+    anchor2.appendChild(newEl2);
+    container.appendChild(anchor2); // Append to the container instead of the body
+    
+    const placeHodler1 = document.createElement("p");
+    placeHodler1.textContent = ``
+    container.appendChild(placeHodler1);
+
   } else {
     const newEl = document.createElement("p");
     newEl.textContent = `${commands[command]}`;
@@ -76,7 +112,7 @@ function enterWithInput(command) {
 function newCommandLine() {
   const newLine = `<div class="input-container">
         <form onsubmit="event.preventDefault()">
-        <label for="input" class="blue">$User></label>
+        <label for="input" class="blue">C:\\Users\\$User></label>
         <input type="text" class="input"/>
         </form>
     </div>`;
