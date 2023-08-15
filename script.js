@@ -4,9 +4,9 @@ setBlinkingCursor();
 const inputHistory = [];
 
 commands = {
-  about: "I'm",
-  interests: "This is the interests bit",
-  contact: "You can contact me at multiple place below: \n github",
+  about: `_`,
+  interests: "Well most obviously I'm interested in computers and code. But I play sports such as hockey and rock climbing. I'm very interested in Apple with how they make there products and most notibly develop software and apps.",
+  contact: "_",
   projects: "_",
   history: "_",
   help: "_",
@@ -80,7 +80,7 @@ function enterWithInput(command) {
     newEl1.height = "56";
     newEl1.src = "https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/github_64h.png";    
     const anchor1 = document.createElement("a");
-    anchor1.href = "https://github.com"; // Replace with the desired link
+    anchor1.href = "https://github.com/loyahdev"; // Replace with the desired link
     anchor1.target = "_blank"; // This line will open the link in a new tab
     anchor1.appendChild(newEl1);
     container.appendChild(anchor1); // Append to the container instead of the body
@@ -95,18 +95,25 @@ function enterWithInput(command) {
     newEl2.height = "56";
     newEl2.src = "https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-plural_64h.png";    
     const anchor2 = document.createElement("a");
-    anchor2.href = "https://github.com"; // Replace with the desired link
+    anchor2.href = "https://discord.com/users/717142444596265061"; // Replace with the desired link
     anchor2.target = "_blank"; // This line will open the link in a new tab
     anchor2.appendChild(newEl2);
     container.appendChild(anchor2); // Append to the container instead of the body
     
-    const newEl3 = document.createElement("p");
-    newEl3.textContent = `https://linktr.ee/loyahdev`
-    container.appendChild(newEl3);
-
     const placeHodler1 = document.createElement("p");
     placeHodler1.textContent = ``
     container.appendChild(placeHodler1);
+
+    const newEl3 = document.createElement("a");
+    newEl3.textContent = 'https://linktr.ee/loyahdev';
+    newEl3.href = 'https://linktr.ee/loyahdev';
+    newEl3.style.color = `#0645AD`;
+    newEl3.target = "_blank"; // This line will open the link in a new tab
+    container.appendChild(newEl3);
+
+    const placeHodler2 = document.createElement("p");
+    placeHodler2.textContent = ``
+    container.appendChild(placeHodler2);
 
   } else if (command === "projects") {
     const info = document.createElement("p");
@@ -128,7 +135,7 @@ function enterWithInput(command) {
     puttersPerfectionGame.height = "56";
     puttersPerfectionGame.src = "https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/github_64h.png";    
     const puttersPerfectionAnchor = document.createElement("a");
-    puttersPerfectionAnchor.href = "https://github.com"; // Replace with the desired link
+    puttersPerfectionAnchor.href = "https://github.com/loyahdev/Putters-Perfection"; // Replace with the desired link
     puttersPerfectionAnchor.target = "_blank"; // This line will open the link in a new tab
     puttersPerfectionAnchor.appendChild(puttersPerfectionGame);
     container.appendChild(puttersPerfectionAnchor); // Append to the container instead of the body
@@ -137,6 +144,37 @@ function enterWithInput(command) {
     const placeHodler = document.createElement("p");
     placeHodler.textContent = ``
     container.appendChild(placeHodler);
+
+  } else if (command === "about") {
+    const aboutText = document.createElement("p");
+    aboutText.textContent = `I'm a Game Developer and Programmer based out of Canada. I know and have learned some of the following programming languages:`
+    container.appendChild(aboutText);
+
+    // Sample array of list items
+    const items = ['C#', 'Python', 'Javascript', 'HTML,CSS', 'Luau', 'Swift(UI)'];
+
+    // Create a <ul> element
+    const ul = document.createElement('ul');
+
+    // Loop through the items array and append each item as a <li> element
+    items.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+
+    // Append the <ul> element to a container in your HTML
+    container.appendChild(ul);
+
+    //placeholder
+    const placeHodler = document.createElement("p");
+    placeHodler.textContent = ``
+    container.appendChild(placeHodler);
+
+    // Next info paragraph
+    const storyText = document.createElement("p");
+    storyText.textContent = `I'm a 13 year old Game Developer that's still learning but has come a long way. I started liking computers around the age of 8 when my dad gave me his old one. After that I completely fell in love. I use to just play games like Roblox on it but I learned how to code and that just kept going. My way of learning is just reading through code and seeing how people do things and how I can improve.`
+    container.appendChild(storyText);
 
   } else {
     const newEl = document.createElement("p");
