@@ -4,9 +4,10 @@ setBlinkingCursor();
 const inputHistory = [];
 
 commands = {
-  about: "This is the about bit. I am about Iori Pearce",
+  about: "I'm",
   interests: "This is the interests bit",
   contact: "You can contact me at multiple place below: \n github",
+  projects: "_",
   history: "_",
   help: "_",
   clear: "_"
@@ -52,6 +53,7 @@ function enterWithInput(command) {
         <ul>
           <li class="commands"><span class="purple">'about'</span> - find out information about myself</li>
           <li class="commands"><span class="purple">'interests'</span> - uncover what excites me in the world of computer science</li>
+          <li class="commands"><span class="purple">'projects'</span> - find out about my projects I'm working on</li>
           <li class="commands"><span class="purple">'contact'</span> - locate different ways of contacting me</li>
           <li class="commands"><span class="purple">'history'</span> - view your terminal search history</li>
           <li class="commands"><span class="yellow">'help'</span> - type to view this list of commands</li>
@@ -98,9 +100,43 @@ function enterWithInput(command) {
     anchor2.appendChild(newEl2);
     container.appendChild(anchor2); // Append to the container instead of the body
     
+    const newEl3 = document.createElement("p");
+    newEl3.textContent = `https://linktr.ee/loyahdev`
+    container.appendChild(newEl3);
+
     const placeHodler1 = document.createElement("p");
     placeHodler1.textContent = ``
     container.appendChild(placeHodler1);
+
+  } else if (command === "projects") {
+    const info = document.createElement("p");
+    info.textContent = `The information and about my projects will be on there respective pages:`
+    container.appendChild(info);
+
+    // PUTTERS PERFECTION
+    const puttersPerfectionName = document.createElement("h1");
+    puttersPerfectionName.textContent = `Putters Perfection`
+    puttersPerfectionName.style.color = 'lime';
+    container.appendChild(puttersPerfectionName);
+
+    const puttersPerfectionDescription = document.createElement("p");
+    puttersPerfectionDescription.textContent = `Putters Perfection  is a 2D mini golf game for iPhones with many holes and gameplay mechanics to keep the fun going.`
+    container.appendChild(puttersPerfectionDescription);
+
+    const puttersPerfectionGame = document.createElement("img");
+    puttersPerfectionGame.alt = "github";
+    puttersPerfectionGame.height = "56";
+    puttersPerfectionGame.src = "https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/github_64h.png";    
+    const puttersPerfectionAnchor = document.createElement("a");
+    puttersPerfectionAnchor.href = "https://github.com"; // Replace with the desired link
+    puttersPerfectionAnchor.target = "_blank"; // This line will open the link in a new tab
+    puttersPerfectionAnchor.appendChild(puttersPerfectionGame);
+    container.appendChild(puttersPerfectionAnchor); // Append to the container instead of the body
+
+    //placeholder
+    const placeHodler = document.createElement("p");
+    placeHodler.textContent = ``
+    container.appendChild(placeHodler);
 
   } else {
     const newEl = document.createElement("p");
