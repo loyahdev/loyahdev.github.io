@@ -7,7 +7,7 @@ commands = {
   about: `_`,
   interests: "Well most obviously I'm interested in computers and code. But I play sports such as hockey and rock climbing. I'm very interested in Apple with how they make there products and most notibly develop software and apps.",
   contact: "_",
-  commisions: "_",
+  commissions: "_",
   projects: "_",
   history: "_",
   ls: "_",
@@ -56,7 +56,7 @@ function enterWithInput(command) {
           <li class="commands"><span class="purple">'interests'</span> - uncover what excites me in the world of computer science</li>
           <li class="commands"><span class="purple">'projects'</span> - find out about my projects I'm working on</li>
           <li class="commands"><span class="purple">'contact'</span> - locate different ways of contacting me</li>
-          <li class="commands"><span class="purple">'commisions'</span> - find out how I can make a project for you</li>
+          <li class="commands"><span class="purple">'commissions'</span> - find out how I can make a project for you</li>
           <li class="commands"><span class="purple">'history'</span> - view your terminal search history</li>
           <li class="commands"><span class="yellow">'ls'</span> - type to view this list of commands</li>
           <li class="commands"><span class="red">'clear'</span> - type this to clear the terminal</li>
@@ -181,9 +181,9 @@ function enterWithInput(command) {
     storyText.textContent = `I'm a 13 year old Game Developer that's still learning but has come a long way. I started liking computers around the age of 8 when my dad gave me his old one. After that I completely fell in love. I use to just play games like Roblox on it but I learned how to code and that just kept going. My way of learning is just reading through code and seeing how people do things and how I can improve.`
     container.appendChild(storyText);
 
-  } else if (command === "commisions") {
+  } else if (command === "commissions") {
     const info = document.createElement("p");
-    info.textContent = `The commisions are all no refunds and changes to completed projects are limited. All purchases are in either Giftcards, Discord Nitro, or Robux. To purchase DM me on discord at loyah. All prices are in:`
+    info.textContent = `The commissions are all no refunds and changes to completed projects are limited. All purchases are in either Giftcards, Discord Nitro, or Robux. To purchase DM me on discord at loyah. All prices are in:`
     container.appendChild(info);
 
     const cadMoney = document.createElement("p");
