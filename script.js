@@ -10,14 +10,14 @@ commands = {
   commisions: "_",
   projects: "_",
   history: "_",
-  help: "_",
+  ls: "_",
   clear: "_"
 };
 
 document.addEventListener("keyup", () => {
   const input = document.querySelectorAll(".input");
   const current = input[input.length - 1];
-  if (current.value == "help") {
+  if (current.value == "ls") {
     current.classList.remove("purple");
     current.classList.add("yellow");
   } else if (commands[current.value]) {
@@ -40,7 +40,7 @@ document.addEventListener("keyup", (e) => {
     if (commands[current.value]) {
       enterWithInput(current.value);
     } else {
-      const invalidInput = `<p><span class = "red">Invalid</span> input, remember input is case sensitive. Type <span class=yellow>'help'</span> to see the full list of commands</p>`;
+      const invalidInput = `<p><span class = "red">Invalid</span> input, remember input is case sensitive. Type <span class=yellow>'ls'</span> to see the full list of commands</p>`;
       container.innerHTML += invalidInput;
     }
     newCommandLine();
@@ -49,7 +49,7 @@ document.addEventListener("keyup", (e) => {
 });
 
 function enterWithInput(command) {
-  if (command === "help") {
+  if (command === "ls") {
     const listOfCommands = `<div id="command-list">
         <ul>
           <li class="commands"><span class="purple">'about'</span> - find out information about myself</li>
@@ -58,7 +58,7 @@ function enterWithInput(command) {
           <li class="commands"><span class="purple">'contact'</span> - locate different ways of contacting me</li>
           <li class="commands"><span class="purple">'commisions'</span> - find out how I can make a project for you</li>
           <li class="commands"><span class="purple">'history'</span> - view your terminal search history</li>
-          <li class="commands"><span class="yellow">'help'</span> - type to view this list of commands</li>
+          <li class="commands"><span class="yellow">'ls'</span> - type to view this list of commands</li>
           <li class="commands"><span class="red">'clear'</span> - type this to clear the terminal</li>
         </ul>
       </div>`;
