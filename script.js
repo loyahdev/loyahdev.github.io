@@ -178,7 +178,7 @@ function enterWithInput(command) {
 
     // Next info paragraph
     const storyText = document.createElement("p");
-    storyText.textContent = `I'm a 13 year old Game Developer that's still learning but has come a long way. I started liking computers around the age of 8 when my dad gave me his old one. After that I completely fell in love. I use to just play games like Roblox on it but I learned how to code and that just kept going. My way of learning is just reading through code and seeing how people do things and how I can improve.`
+    storyText.textContent = `I'm a Game Developer that's still learning but has come a long way. I started liking computers around the age of 8 when my dad gave me his old one. After that I completely fell in love. I use to just play games like Roblox on it but I learned how to code and that just kept going. My way of learning is just reading through code and seeing how people do things and how I can improve.`
     container.appendChild(storyText);
 
   } else if (command === "commissions") {
