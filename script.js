@@ -125,15 +125,15 @@ function enterWithInput(command) {
     info.textContent = `The information and about my projects will be on there respective pages:`
     container.appendChild(info);
 
-    // PUTTERS PERFECTION
+    // PUTT PERFECT
     const puttersPerfectionName = document.createElement("h1");
-    puttersPerfectionName.textContent = `Putters Perfection`
+    puttersPerfectionName.textContent = `Putt Perfect`
     puttersPerfectionName.style.color = 'lime';
-    container.appendChild(puttersPerfectionName);
+    container.appendChild(puttPerfectName);
 
     const puttersPerfectionDescription = document.createElement("p");
-    puttersPerfectionDescription.textContent = `Putters Perfection  is a 2D mini golf game for iPhones with many holes and gameplay mechanics to keep the fun going.`
-    container.appendChild(puttersPerfectionDescription);
+    puttersPerfectionDescription.textContent = `Putt Perfect  is a 2D mini golf game for iPhones with many holes and gameplay mechanics to keep the fun going.`
+    container.appendChild(puttPerfectDescription);
 
     const puttersPerfectionGame = document.createElement("img");
     puttersPerfectionGame.alt = "github";
@@ -178,7 +178,7 @@ function enterWithInput(command) {
 
     // Next info paragraph
     const storyText = document.createElement("p");
-    storyText.textContent = `I'm a Game Developer that's still learning but has come a long way. I started liking computers around the age of 8 when my dad gave me his old one. After that I completely fell in love. I use to just play games like Roblox on it but I learned how to code and that just kept going. My way of learning is just reading through code and seeing how people do things and how I can improve.`
+    storyText.textContent = `I'm a 13 year old Game Developer that's still learning but has come a long way. I started liking computers around the age of 8 when my dad gave me his old one. After that I completely fell in love. I use to just play games like Roblox on it but I learned how to code and that just kept going. My way of learning is just reading through code and seeing how people do things and how I can improve.`
     container.appendChild(storyText);
 
   } else if (command === "commissions") {
