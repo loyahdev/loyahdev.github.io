@@ -127,12 +127,12 @@ function enterWithInput(command) {
 
     // PUTTERS PERFECTION
     const puttersPerfectionName = document.createElement("h1");
-    puttersPerfectionName.textContent = `Putters Perfection`
+    puttersPerfectionName.textContent = `Putt Perfect`
     puttersPerfectionName.style.color = 'lime';
     container.appendChild(puttersPerfectionName);
 
     const puttersPerfectionDescription = document.createElement("p");
-    puttersPerfectionDescription.textContent = `Putters Perfection  is a 2D mini golf game for iPhones with many holes and gameplay mechanics to keep the fun going.`
+    puttersPerfectionDescription.textContent = `Putt Perfect  is a 2D mini golf game for iPhones with many holes and gameplay mechanics to keep the fun going.`
     container.appendChild(puttersPerfectionDescription);
 
     const puttersPerfectionGame = document.createElement("img");
