@@ -5,7 +5,7 @@ const inputHistory = [];
 
 commands = {
   about: `_`,
-  interests: "Well most obviously I'm interested in computers and code. But I play sports such as hockey and rock climbing. I'm very interested in Apple with how they make there products and most notibly develop software and apps.",
+  interests: "Well most obviously I'm interested in machines and code. But I play sports such as hockey and rock climbing. I'm very interested in Apple with how they make there products and most notibly develop software and apps.",
   contact: "_",
   commissions: "_",
   projects: "_",
