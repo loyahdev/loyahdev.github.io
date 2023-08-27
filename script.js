@@ -140,7 +140,7 @@ function enterWithInput(command) {
     puttersPerfectionGame.height = "56";
     puttersPerfectionGame.src = "https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/github_64h.png";    
     const puttersPerfectionAnchor = document.createElement("a");
-    puttersPerfectionAnchor.href = "https://github.com/loyahdev/Putters-Perfection"; // Replace with the desired link
+    puttersPerfectionAnchor.href = "https://github.com/loyahdev/Putt-Perfect"; // Replace with the desired link
     puttersPerfectionAnchor.target = "_blank"; // This line will open the link in a new tab
     puttersPerfectionAnchor.appendChild(puttersPerfectionGame);
     container.appendChild(puttersPerfectionAnchor); // Append to the container instead of the body
