@@ -153,7 +153,7 @@ function enterWithInput(command) {
     // Hydrogen
     const hydrogenName = document.createElement("h1");
     hydrogenName.textContent = `Hydrogen`
-    hydrogenName.style.color = 'blue';
+    hydrogenName.style.color = 'rgb(173, 216, 230)';
     container.appendChild(hydrogenName);
 
     const hydrogenDescription = document.createElement("p");
