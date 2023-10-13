@@ -146,6 +146,31 @@ function enterWithInput(command) {
     container.appendChild(puttersPerfectionAnchor); // Append to the container instead of the body
 
     //placeholder
+    const placeHodler0 = document.createElement("p");
+    placeHodler0.textContent = ``
+    container.appendChild(placeHodler0);
+
+    // Hydrogen
+    const hydrogenName = document.createElement("h1");
+    hydrogenName.textContent = `Hydrogen`
+    hydrogenName.style.color = 'blue';
+    container.appendChild(hydrogenName);
+
+    const hydrogenDescription = document.createElement("p");
+    hydrogenDescription.textContent = `Hydrogen is the best iOS toolbox with shortcuts, tweaks and sideloading capabilities.`
+    container.appendChild(hydrogenDescription);
+
+    const hydrogenGame = document.createElement("img");
+    hydrogenGame.alt = "github";
+    hydrogenGame.height = "56";
+    hydrogenGame.src = "https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/github_64h.png";    
+    const hydrogenAnchor = document.createElement("a");
+    hydrogenAnchor.href = "https://github.com/loyahdev/hydrogen"; // Replace with the desired link
+    hydrogenAnchor.target = "_blank"; // This line will open the link in a new tab
+    hydrogenAnchor.appendChild(hydrogenGame);
+    container.appendChild(hydrogenAnchor); // Append to the container instead of the body
+
+    //placeholder
     const placeHodler = document.createElement("p");
     placeHodler.textContent = ``
     container.appendChild(placeHodler);
