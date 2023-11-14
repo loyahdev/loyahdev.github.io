@@ -19,7 +19,7 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #FD8A8A, #F1F7B5, #A8D1D1, #9EA1D4);
+  background: linear-gradient(-45deg, #1a1919, darkblue, purple, #1a1919);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   color: white;
