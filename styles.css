@@ -1,0 +1,551 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html,
+body {
+  height: 100%; /* This makes sure the html and body tags extend full height */
+  margin: 0;
+  padding: 0;
+}
+
+.col-md-5, .col-md-7, .col-xl-3, .col-xl-9 {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+h1 {
+  margin: 0.67em 0;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292e;
+  background-size: cover; /* Cover the full area of the body */
+  background-position: center; /* Center the background image initially */
+}
+
+.d-md-flex {
+  position: relative;
+  z-index: 2; /* Higher z-index than the image */
+  background: #ffffff; /* Ensures content has a background if needed */
+  width: 100%; /* Adjust width as necessary */
+  min-height: 100vh; /* This ensures that the flex container extends full height */
+  display: flex;
+  flex-direction: row; /* Ensures the content is laid out in a row */
+}
+
+/*.col-md-5, .col-md-7 {
+    background-image: url('ai-image.png');
+    background-size: cover; /* This will cover the entire div without repeating */
+/*background-position: center;
+}*/
+
+.sidebar {
+  min-height: 100vh; /* Full height to the sidebar */
+  display: flex;
+  flex-direction: column; /* Makes content stack vertically */
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+p {
+  margin-top: 0;
+}
+::placeholder {
+  color: #6a737d;
+}
+.col-6 {
+  width: 50%;
+}
+@media (min-width: 544px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-5 {
+    width: 41.66667%;
+  }
+  .col-md-7 {
+    width: 58.33333%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 1012px) {
+  .col-lg-4 {
+    width: 33.33333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-8 {
+    width: 66.66667%;
+  }
+}
+@media (min-width: 1280px) {
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33333%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+}
+.gutter-condensed {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+.gutter-condensed > [class*="col-"] {
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+}
+.tooltipped {
+  position: relative;
+}
+.tooltipped::after {
+  position: absolute;
+  z-index: 1000000;
+  display: none;
+  padding: 0.5em 0.75em;
+  font: normal normal 11px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: break-word;
+  white-space: pre;
+  pointer-events: none;
+  content: attr(aria-label);
+  background: #1b1f23;
+  border-radius: 3px;
+  opacity: 0;
+}
+.tooltipped::before {
+  position: absolute;
+  z-index: 1000001;
+  display: none;
+  width: 0;
+  height: 0;
+  color: #1b1f23;
+  pointer-events: none;
+  content: "";
+  border: 6px solid transparent;
+  opacity: 0;
+}
+@keyframes tooltip-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tooltipped:hover::before,
+.tooltipped:hover::after,
+.tooltipped:active::before,
+.tooltipped:active::after,
+.tooltipped:focus::before,
+.tooltipped:focus::after {
+  display: inline-block;
+  text-decoration: none;
+  animation-name: tooltip-appear;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 0.4s;
+}
+.tooltipped-s::after,
+.tooltipped-se::after,
+.tooltipped-sw::after {
+  top: 100%;
+  right: 50%;
+  margin-top: 6px;
+}
+.tooltipped-s::before,
+.tooltipped-se::before,
+.tooltipped-sw::before {
+  top: auto;
+  right: 50%;
+  bottom: -7px;
+  margin-right: -6px;
+  border-bottom-color: #1b1f23;
+}
+.tooltipped-se::after {
+  right: auto;
+  left: 50%;
+  margin-left: -16px;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0.8;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(100%);
+  }
+}
+@keyframes grow-x {
+  to {
+    width: 100%;
+  }
+}
+@keyframes shrink-x {
+  to {
+    width: 0%;
+  }
+}
+@keyframes scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@keyframes pulse-in {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.hover-grow {
+  transition: transform 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.hover-grow:hover {
+  transform: scale(1.025);
+}
+.border {
+  border: 1px #e1e4e8 solid !important;
+}
+.border-gray-light {
+  border-color: #eaecef !important;
+}
+.border-top {
+  border-top: 1px #e1e4e8 solid !important;
+}
+.rounded-1 {
+  border-radius: 3px !important;
+}
+.rounded-2 {
+  border-radius: 6px !important;
+}
+@media (min-width: 768px) {
+  .border-md-top-0 {
+    border-top: 0 !important;
+  }
+}
+.circle {
+  border-radius: 50% !important;
+}
+.box-shadow {
+  box-shadow: 0 1px 1px rgba(27, 31, 35, 0.1) !important;
+}
+.bg-white {
+  background-color: #fff !important;
+}
+.bg-gray-dark {
+  background-color: #24292e !important;
+} /*.bg-gray-light{background-color:#fafbfc!important}*/
+.bg-green {
+  background-color: #28a745 !important;
+}
+.text-gray {
+  color: #586069 !important;
+}
+.text-white {
+  color: #fff !important;
+}
+.link-gray-dark {
+  color: #24292e !important;
+}
+.link-gray-dark:hover {
+  color: #0366d6 !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+.flex-justify-center {
+  justify-content: center !important;
+}
+.flex-justify-between {
+  justify-content: space-between !important;
+}
+.flex-items-start {
+  align-items: flex-start !important;
+}
+.flex-items-center {
+  align-items: center !important;
+}
+.flex-self-stretch {
+  -ms-grid-row-align: stretch !important;
+  align-self: stretch !important;
+}
+.position-relative {
+  position: relative !important;
+}
+.v-align-middle {
+  vertical-align: middle !important;
+}
+.height-full {
+  height: 100% !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mt-1 {
+  margin-top: 4px !important;
+}
+.mr-1 {
+  margin-right: 4px !important;
+}
+.mb-1 {
+  margin-bottom: 4px !important;
+}
+.mr-2 {
+  margin-right: 8px !important;
+}
+.mb-2 {
+  margin-bottom: 8px !important;
+}
+.mr-3 {
+  margin-right: 16px !important;
+}
+.mb-3 {
+  margin-bottom: 16px !important;
+}
+.mb-4 {
+  margin-bottom: 24px !important;
+}
+.mb-6 {
+  margin-bottom: 40px !important;
+}
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.thing1 {
+  background-color: #0f172b;
+  width: calc(100vh + 50%); /* 10% smaller than full viewport height */
+  min-height: 100px;  /* Minimum height - increase this if needed */
+  height: auto;       /* Adjust height automatically based on content */
+  flex-grow: 1;
+  border-width: 25px 20px; /* Top and bottom borders are 40px */
+  border-style: solid; /* Needed for border-image */
+  border-image: url('imgur.png') 20 fill round; /* Updated for proper fill */
+  border-image-slice: 30 fill; /* Fill to prevent stretching issues */
+  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+
+
+
+
+.py-1 {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+.px-2 {
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+}
+.p-3 {
+  padding: 16px !important;
+}
+.px-4 {
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+}
+.p-5 {
+  padding: 32px !important;
+}
+.py-6 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+@media (min-width: 768px) {
+  .px-md-6 {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+  }
+}
+.f3 {
+  font-size: 18px !important;
+}
+@media (min-width: 768px) {
+  .f3 {
+    font-size: 20px !important;
+  }
+}
+.f4 {
+  font-size: 16px !important;
+}
+@media (min-width: 768px) {
+  .f4 {
+    font-size: 16px !important;
+  }
+}
+.f5 {
+  font-size: 14px !important;
+}
+.f6 {
+  font-size: 12px !important;
+}
+.lh-condensed {
+  line-height: 1.25 !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.no-underline {
+  text-decoration: none !important;
+}
+.ws-normal {
+  white-space: normal !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+@media (min-width: 544px) {
+  .d-sm-flex {
+    display: flex !important;
+  }
+}
+@media (min-width: 768px) {
+  .d-md-flex {
+    display: flex !important;
+  }
+}
+.github-component {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+}
+.repo-language-color {
+  filter: brightness(125%) !important;
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  top: 2px;
+  width: 12px;
+}
+.min-height-full {
+  min-height: 100vh;
+}
