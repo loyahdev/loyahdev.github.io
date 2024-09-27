@@ -15,6 +15,10 @@ body {
   min-height: 100vh;
 }
 
+.col-md-5, .col-md-7 {
+  /*background-image: url('design.png');*/
+}
+
 body {
   margin: 0;
 }
@@ -436,16 +440,9 @@ p {
 }
 
 .thing1 {
-  background-color: #0f172b;
-  width: calc(100vh + 50%); /* 10% smaller than full viewport height */
-  min-height: 100px;  /* Minimum height - increase this if needed */
-  height: auto;       /* Adjust height automatically based on content */
-  flex-grow: 1;
-  border-width: 25px 20px; /* Top and bottom borders are 40px */
-  border-style: solid; /* Needed for border-image */
-  border-image: url('imgur.png') 20 fill round; /* Updated for proper fill */
-  border-image-slice: 30 fill; /* Fill to prevent stretching issues */
-  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+  /*background-color: #0f172b;*/
+  background-image: url('design.png');
+  background-size: 100% 100%;
 }
 
 
