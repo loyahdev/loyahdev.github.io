@@ -1,24 +1,8 @@
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
-
-html,
-body {
-  height: 100%; /* This makes sure the html and body tags extend full height */
-  margin: 0;
-  padding: 0;
-}
-
-.col-md-5, .col-md-7, .col-xl-3, .col-xl-9 {
-  min-height: 100vh;
-}
-
-.col-md-5, .col-md-7 {
-  /*background-image: url('design.png');*/
-}
-
 body {
   margin: 0;
 }
@@ -55,30 +39,6 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #24292e;
-  background-size: cover; /* Cover the full area of the body */
-  background-position: center; /* Center the background image initially */
-}
-
-.d-md-flex {
-  position: relative;
-  z-index: 2; /* Higher z-index than the image */
-  background: #ffffff; /* Ensures content has a background if needed */
-  width: 100%; /* Adjust width as necessary */
-  min-height: 100vh; /* This ensures that the flex container extends full height */
-  display: flex;
-  flex-direction: row; /* Ensures the content is laid out in a row */
-}
-
-/*.col-md-5, .col-md-7 {
-    background-image: url('ai-image.png');
-    background-size: cover; /* This will cover the entire div without repeating */
-/*background-position: center;
-}*/
-
-.sidebar {
-  min-height: 100vh; /* Full height to the sidebar */
-  display: flex;
-  flex-direction: column; /* Makes content stack vertically */
 }
 
 a {
@@ -440,14 +400,9 @@ p {
 }
 
 .thing1 {
-  /*background-color: #0f172b;*/
-  background-image: url('design.png');
+  background-image: url("design.png");
   background-size: 100% 100%;
 }
-
-
-
-
 
 .py-1 {
   padding-top: 4px !important;
